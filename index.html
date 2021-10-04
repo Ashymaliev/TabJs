@@ -5,29 +5,26 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn JavaScript</title>
+    <title>Learn Tabs JavaScript</title>
 </head>
 <body>
     <div class="tabs">
         <div class="tabs__nav">
-            <button class="tabs__nav-btn">Tab1</button>
-            <button class="tabs__nav-btn">Tab2</button>
-            <button class="tabs__nav-btn">Tab3</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Tab1</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Tab2</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Tab3</button>
         </div>
         <div class="tabs__content">
-            <div class="tabs__item  active">
-                <p> 
-                    Hi. I’m Dino, the family dog. I help keep people safe, 
+            <div class="tabs__item" id="tab_1">
+                    <p> Hi. I’m Dino, the family dog. I help keep people safe, 
                     especially on the roads.
                     Take a look at my diary to see what I did last week.
                     Sunday
                     Some children really don’t think. Our neighbour’s boy ran in front of a car to get his ball.
-                    The car almost hit him. I saved him though. Remember, always look and listen.
-                    
-                </p>
+                    The car almost hit him. I saved him though. Remember, always look and listen.</p>
             </div>
 
-            <div class="tabs__item">
+            <div class="tabs__item" id="tab_2">
                 <p>Monday
                     Walking on the street at night can be very dangerous, 
                     especially if you wear dark clothes. Car drivers can’t see you very well, 
@@ -43,7 +40,7 @@
 
             </div>
 
-            <div class="tabs__item">
+            <div class="tabs__item" id="tab_3">
                 <p>Thursday
                     Seat belts can save your life! I make sure everyone in our car wears their seat belt.
                     If they forget, I soon remind them. Even I’ve got one.
@@ -58,8 +55,6 @@
             </div>
         </div>
     </div>
-
-
     <script src="app.js"></script>
 </body>
 </html>
